@@ -275,7 +275,7 @@ Re-drawing real motor-control circuits until symbols and numbering stop slowing 
 
 ## 🌱 Skills I'm Adding Next 
 
-> Ordered by *effort-to-reward ratio*. Each one is a weekend, not a semester.
+> Ordered by *effort-to-reward ratio*. 
 
 | Skill | Why it's an easy win | First project |
 |---|---|---|
@@ -373,7 +373,7 @@ Re-drawing real motor-control circuits until symbols and numbering stop slowing 
 
 ## 🏃‍♂️ GitHub Stats
 
-*Day-1 note: these cards start nearly empty, and that's the honest version of a portfolio. They fill as the repos do.*
+*Day-1 note: these cards start nearly empty, and that's the honest version. They fill as the repos do.*
 
 <table align="center">
 <tr>
