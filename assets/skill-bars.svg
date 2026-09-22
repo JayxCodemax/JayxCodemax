@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 566" width="880" height="566" role="img" aria-label="Skill bars showing learning stages, animated">
+  <defs>
+    <style><![CDATA[
+      :root {
+        --panel: rgba(255, 255, 255, 0.72);
+        --panel-border: rgba(37, 99, 235, 0.16);
+        --ink: #0f172a;
+        --sub: #64748b;
+        --track: #e6ebf5;
+        --tick: rgba(255,255,255,.95);
+        --blue: #2563eb; --sky: #0ea5e9; --green: #16a34a;
+        --amber: #f59e0b; --rose: #f43f5e; --violet: #7c3aed;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --panel: rgba(13, 20, 38, 0.66);
+          --panel-border: rgba(56, 189, 248, 0.20);
+          --ink: #e8eefc;
+          --sub: #93a6c4;
+          --track: #18233c;
+          --tick: rgba(13,20,38,.85);
+          --blue: #60a5fa; --sky: #38bdf8; --green: #4ade80;
+          --amber: #fbbf24; --rose: #fb7185; --violet: #a78bfa;
+        }
+      }
+      text { font-family: 'Segoe UI', ui-sans-serif, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+      .label { font-size: 15px; font-weight: 600; fill: var(--ink); }
+      .stage { font-size: 12.5px; font-weight: 800; fill: var(--sub); letter-spacing: .8px; text-transform: uppercase; }
+      .head  { font-size: 12.5px; font-weight: 800; fill: var(--blue); letter-spacing: 3px; }
+      .note  { font-size: 12px; fill: var(--sub); }
+      .track { fill: var(--track); }
+      .panel { fill: var(--panel); stroke: var(--panel-border); }
+      .tick  { stroke: var(--tick); stroke-width: 2; }
+      .bar   { transform-box: fill-box; transform-origin: left center;
+               animation: grow 1.5s cubic-bezier(.22,1,.36,1) both; }
+      .stage { animation: fade .7s ease both; }
+      @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+      .shine { fill: #fff; opacity: .30; }
+      .dot { animation: blink 2.4s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity:.3 } 50% { opacity:1 } }
+
+      @media (prefers-reduced-motion: reduce) { .bar, .stage, .dot { animation: none; } }
+    ]]></style>
+
+    <linearGradient id="g-blue" x1="0" x2="1"><stop offset="0%" stop-color="var(--blue)"/><stop offset="100%" stop-color="var(--sky)"/></linearGradient>
+    <linearGradient id="g-green" x1="0" x2="1"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="var(--green)"/></linearGradient>
+    <linearGradient id="g-amber" x1="0" x2="1"><stop offset="0%" stop-color="#ea580c"/><stop offset="100%" stop-color="var(--amber)"/></linearGradient>
+
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="8" height="8" fill="none"/>
+      <path d="M0 0v8" class="shine"/>
+    </pattern>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="879" height="565" rx="16" class="panel"/>
+
+  <!-- ============ HARDWARE &amp; FIRMWARE ============ -->
+  <g transform="translate(30 40)">
+    <text class="head" x="0" y="0">HARDWARE &amp; FIRMWARE</text>
+    <circle class="dot" cx="196" cy="-4.5" r="3.5" fill="var(--blue)"/>
+
+    <g transform="translate(0 22)">
+      <text class="label" x="0" y="14">Arduino / AVR C++</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--blue)">building basics · 3/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.05s"><rect x="0" y="24" width="410" height="13" rx="6.5" fill="url(#g-blue)"/><rect x="0" y="24" width="410" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 62)">
+      <text class="label" x="0" y="14">Circuit wiring, sensors &amp; bench tools</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--blue)">comfortable · 4/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.15s"><rect x="0" y="24" width="546" height="13" rx="6.5" fill="url(#g-blue)"/><rect x="0" y="24" width="546" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 102)">
+      <text class="label" x="0" y="14">Multimeter · oscilloscope · power supply</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--blue)">comfortable · 4/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.25s"><rect x="0" y="24" width="546" height="13" rx="6.5" fill="url(#g-blue)"/><rect x="0" y="24" width="546" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+  </g>
+
+  <!-- ============ CAD &amp; SIMULATION ============ -->
+  <g transform="translate(30 204)">
+    <text class="head" x="0" y="0">CAD &amp; SIMULATION</text>
+    <circle class="dot" cx="176" cy="-4.5" r="3.5" fill="var(--green)"/>
+
+    <g transform="translate(0 22)">
+      <text class="label" x="0" y="14">2D CAD &amp; drafting</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--green)">comfortable · 4/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.1s"><rect x="0" y="24" width="546" height="13" rx="6.5" fill="url(#g-green)"/><rect x="0" y="24" width="546" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 62)">
+      <text class="label" x="0" y="14">AutoCAD Electrical</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--green)">new to it · 2/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.2s"><rect x="0" y="24" width="273" height="13" rx="6.5" fill="url(#g-green)"/><rect x="0" y="24" width="273" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 102)">
+      <text class="label" x="0" y="14">LTspice</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--green)">new to it · 2/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.3s"><rect x="0" y="24" width="273" height="13" rx="6.5" fill="url(#g-green)"/><rect x="0" y="24" width="273" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 142)">
+      <text class="label" x="0" y="14">Simulink / MATLAB</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--green)">just started · 1/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.4s"><rect x="0" y="24" width="137" height="13" rx="6.5" fill="url(#g-green)"/><rect x="0" y="24" width="137" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+  </g>
+
+  <!-- ============ SOFTWARE · WEB · CONTROL ============ -->
+  <g transform="translate(30 408)">
+    <text class="head" x="0" y="0">SOFTWARE · WEB · CONTROL</text>
+    <circle class="dot" cx="228" cy="-4.5" r="3.5" fill="var(--amber)"/>
+
+    <g transform="translate(0 22)">
+      <text class="label" x="0" y="14">Python for hardware &amp; data</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--amber)">building basics · 3/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.15s"><rect x="0" y="24" width="410" height="13" rx="6.5" fill="url(#g-amber)"/><rect x="0" y="24" width="410" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 62)">
+      <text class="label" x="0" y="14">HTML · CSS · JavaScript</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--amber)">building basics · 3/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.25s"><rect x="0" y="24" width="410" height="13" rx="6.5" fill="url(#g-amber)"/><rect x="0" y="24" width="410" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+    <g transform="translate(0 102)">
+      <text class="label" x="0" y="14">Git &amp; GitHub</text><text class="stage" x="820" y="14" text-anchor="end" fill="var(--amber)">new to it · 2/6</text>
+      <rect class="track" x="0" y="24" width="820" height="13" rx="6.5"/>
+      <g class="bar" style="animation-delay:.35s"><rect x="0" y="24" width="273" height="13" rx="6.5" fill="url(#g-amber)"/><rect x="0" y="24" width="273" height="13" rx="6.5" fill="url(#hatch)"/></g>
+      <g class="tick"><path d="M164 22v17M328 22v17M492 22v17M656 22v17"/></g>
+    </g>
+  </g>
+
+  <g transform="translate(30 552)">
+    <text class="note" x="0" y="0">stages: 1 = just started · 2 = new to it · 3 = building basics · 4 = comfortable · 5 = practised · 6 = teaching it</text>
+    <text class="note" x="820" y="0" text-anchor="end" fill="var(--violet)">bars rise with receipts</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" role="img" aria-label="Animated code editor card">
+  <defs>
+    <style><![CDATA[
+      :root { --bg:#0b1220; --panel:#111c33; --line:#1e2c4a; --txt:#e2e8f0; --com:#64748b;
+              --kw:#38bdf8; --fn:#a78bfa; --str:#4ade80; --num:#fbbf24; --caret:#38bdf8; }
+      @media (prefers-color-scheme: light) {
+        :root { --bg:#f8fafc; --panel:#ffffff; --line:#e2e8f0; --txt:#0f172a; --com:#94a3b8;
+                --kw:#2563eb; --fn:#7c3aed; --str:#059669; --num:#b45309; --caret:#2563eb; }
+      }
+      text { font-family: 'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace; font-size: 14.5px; fill: var(--txt); }
+      .kw { fill: var(--kw); } .fn { fill: var(--fn); } .str { fill: var(--str); }
+      .num { fill: var(--num); } .com { fill: var(--com); font-style: italic; }
+      .gutter { fill: var(--com); font-size: 12.5px; }
+      .ln { animation: type 9s steps(1, end) infinite both; opacity: 0; }
+      .l1{animation-delay:.3s} .l2{animation-delay:1.0s} .l3{animation-delay:1.7s}
+      .l4{animation-delay:2.4s} .l5{animation-delay:3.1s} .l6{animation-delay:3.8s}
+      .l7{animation-delay:4.5s} .l8{animation-delay:5.2s} .l9{animation-delay:5.9s}
+      .l10{animation-delay:6.6s} .l11{animation-delay:7.3s} .l12{animation-delay:8.0s}
+      @keyframes type { 0%,0.1% { opacity:0 } 6%,92% { opacity:1 } 100% { opacity:0 } }
+      .caret { fill: var(--caret); animation: blink 1.05s steps(1,end) infinite; }
+      @keyframes blink { 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
+      .pulse { animation: pulse 3s ease-in-out infinite; }
+      @keyframes pulse { 0%,100%{opacity:.25} 50%{opacity:1} }
+      @media (prefers-reduced-motion: reduce) { .ln { animation:none; opacity:1 } .caret,.pulse{animation:none} }
+    ]]></style>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="340" rx="16" fill="var(--bg)" filter="url(#sh)"/>
+  <rect x="10.5" y="10.5" width="579" height="319" rx="12" fill="var(--panel)" stroke="var(--line)"/>
+  <circle cx="32" cy="32" r="6" fill="#f43f5e"/><circle cx="52" cy="32" r="6" fill="#fbbf24"/><circle cx="72" cy="32" r="6" fill="#22c55e"/>
+  <rect x="98" y="21" width="180" height="22" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+  <text x="112" y="36.5" font-size="12" class="com">sketch.ino</text>
+  <circle class="pulse" cx="566" cy="32" r="5" fill="#22c55e"/>
+
+  <g transform="translate(28 72)">
+    <text class="gutter" x="0" y="0">1</text><g class="ln l1"><text class="kw" x="30" y="0">#include</text><text class="str" x="106" y="0"> &lt;Servo.h&gt;</text></g>
+    <text class="gutter" x="0" y="24">2</text><g class="ln l2"><text x="30" y="24"></text></g>
+    <text class="gutter" x="0" y="48">3</text><g class="ln l3"><text class="kw" x="30" y="48">const int</text><text x="108" y="48">LDR_PIN = A0;</text></g>
+    <text class="gutter" x="0" y="72">4</text><g class="ln l4"><text class="com" x="30" y="72">// hardware + software, finally friends</text></g>
+    <text class="gutter" x="0" y="96">5</text><g class="ln l5"><text x="30" y="96"></text></g>
+    <text class="gutter" x="0" y="120">6</text><g class="ln l6"><text class="fn" x="30" y="120">void</text><text class="kw" x="69" y="120">setup</text><text x="118" y="120">() {</text></g>
+    <text class="gutter" x="0" y="144">7</text><g class="ln l7"><text x="52" y="144">Serial.</text><text class="fn" x="100" y="144">begin</text><text x="141" y="144">(</text><text class="num" x="148" y="144">115200</text><text x="195" y="144">);</text></g>
+    <text class="gutter" x="0" y="168">8</text><g class="ln l8"><text x="52" y="168">pinMode(LDR_PIN, </text><text class="kw" x="190" y="168">INPUT</text><text x="238" y="168">);</text></g>
+    <text class="gutter" x="0" y="192">9</text><g class="ln l9"><text x="30" y="192">}</text></g>
+    <text class="gutter" x="0" y="216">10</text><g class="ln l10"><text class="fn" x="30" y="216">void</text><text class="kw" x="69" y="216">loop</text><text x="108" y="216">() {</text></g>
+    <text class="gutter" x="0" y="240">11</text><g class="ln l11"><text x="52" y="240">int lux = </text><text class="fn" x="130" y="240">analogRead</text><text x="219" y="240">(LDR_PIN);</text></g>
+    <text class="gutter" x="0" y="264">12</text><g class="ln l12"><text x="52" y="264">if (lux &lt; </text><text class="num" x="123" y="264">180</text><text x="153" y="264">) lights.</text><text class="fn" x="221" y="264">on</text><text x="244" y="264">();</text>
+      <rect class="caret" x="256" y="252" width="8" height="16"/></g>
+  </g>
+</svg>

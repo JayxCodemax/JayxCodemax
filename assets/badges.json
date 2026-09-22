@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "label": "\ud83c\udf93 the journey so far",
+  "message": "1y 2m on the bench \u00b7 448 days since Jul 2025",
+  "color": "2563eb",
+  "isError": false,
+  "namedLinks": {
+    "\ud83d\udcc5 started": "2025-07-01",
+    "\u23f3 days on": "448",
+    "\ud83d\udd27 spare days": "23"
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 46" width="240" height="46" role="img" aria-label="LTspice — new to it">
+  <defs>
+    <style><![CDATA[
+      :root { --panel: rgba(255,255,255,.70); --border: #16a34a33; --ink: #0f172a; --sub: #64748b; --track: #e6ebf5; }
+      @media (prefers-color-scheme: dark) {
+        :root { --panel: rgba(13,20,38,.66); --border: #16a34a55; --ink: #e8eefc; --sub: #93a6c4; --track: #18233c; }
+      }
+      text { font-family: 'Segoe UI', ui-sans-serif, system-ui, -apple-system, Roboto, sans-serif; }
+      .name  { font-size: 13px; font-weight: 600; fill: var(--ink); }
+      .state { font-size: 10px; font-weight: 800; fill: #16a34a; letter-spacing: 1px; text-transform: uppercase; }
+      .panel { fill: var(--panel); stroke: var(--border); }
+      .track { fill: var(--track); }
+      .tick  { stroke: var(--panel); stroke-width: 2; }
+      .fill  { transform-box: fill-box; transform-origin: left center;
+                animation: grow 1.6s cubic-bezier(.22,1,.36,1) .2s both; }
+      @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      @media (prefers-reduced-motion: reduce) { .fill { animation: none; } }
+    ]]></style>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#84cc16"/></linearGradient>
+  </defs>
+  <rect class="panel" x="0.5" y="0.5" width="239" height="45" rx="12"/>
+  <g transform="translate(12 13) scale(0.75)" fill="none" stroke="#16a34a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9.3267 3.4848c-.7965.627-.9744 1.6212-1.1644 3.3173-.3653 3.257-.641 5.1982-1.0473 8.658-.199 1.705-.388 2.704-.7 3.313m0 0c-.199.388-.462.657-.834.813M6.4 19.44c.7-.32 1.299-1.06 1.878-2.286.948-2.005 2.11-4.94 3.14-7.632 1.033-2.693 1.94-5.148 2.617-6.402.345-.64.71-1.048 1.15-1.226m0 0c-.44.178-.794.586-1.15 1.226"/></g>
+  <text class="name" x="42" y="20">LTspice</text>
+  <text class="state" x="228" y="20" text-anchor="end">new to it</text>
+  <rect class="track" x="42" y="30" width="186" height="10" rx="5.0"/>
+  <g class="tick" opacity=".9"><path d="M79 28v14" stroke="var(--panel)"/><path d="M116 28v14" stroke="var(--panel)"/><path d="M154 28v14" stroke="var(--panel)"/><path d="M191 28v14" stroke="var(--panel)"/></g>
+  <g class="fill"><rect x="42" y="30" width="62" height="10" rx="5.0" fill="url(#g)"/></g>
+</svg>

@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Jayant Katariya — Electrical Engineering, embedded systems, robotics and automation">
+  <defs>
+    <style><![CDATA[
+      :root {
+        --bg1: #f7f9fd;
+        --bg2: #e8eefc;
+        --ink: #0f172a;
+        --sub: #475569;
+        --accent: #2563eb;
+        --accent2: #0ea5e9;
+        --accent3: #7c3aed;
+        --trace: #94a3b8;
+        --grid: rgba(15, 23, 42, 0.045);
+        --panel: rgba(255, 255, 255, 0.78);
+        --panel-border: rgba(37, 99, 235, 0.28);
+        --chip: rgba(37, 99, 235, 0.08);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg1: #070b18;
+          --bg2: #0c1428;
+          --ink: #f1f5f9;
+          --sub: #93a6c4;
+          --accent: #38bdf8;
+          --accent2: #22d3ee;
+          --accent3: #a78bfa;
+          --trace: #23324e;
+          --grid: rgba(148, 163, 184, 0.07);
+          --panel: rgba(13, 20, 38, 0.72);
+          --panel-border: rgba(56, 189, 248, 0.28);
+          --chip: rgba(56, 189, 248, 0.10);
+        }
+      }
+      text { font-family: 'Segoe UI', ui-sans-serif, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+
+      .trace { fill: none; stroke: var(--trace); stroke-width: 2; stroke-linecap: round; }
+      .trace-live {
+        fill: none; stroke: url(#pulse); stroke-width: 3; stroke-linecap: round;
+        stroke-dasharray: 26 520; animation: flow 7s linear infinite;
+        filter: url(#glow);
+      }
+      .trace-live.slow { animation-duration: 9s; animation-delay: -3s; stroke-dasharray: 20 460; }
+      .trace-live.fast { animation-duration: 5.6s; animation-delay: -1.6s; stroke-dasharray: 34 560; }
+      @keyframes flow { to { stroke-dashoffset: -546; } }
+
+      .via { fill: var(--bg1); stroke: var(--trace); stroke-width: 2; }
+      .led { animation: blink 2.6s ease-in-out infinite; }
+      .led.d1 { animation-delay: .4s; } .led.d2 { animation-delay: .9s; }
+      .led.d3 { animation-delay: 1.5s; } .led.d4 { animation-delay: 2s; }
+      @keyframes blink { 0%, 100% { opacity: .25; } 45% { opacity: 1; } }
+
+      .sweep { opacity: .0; animation: sweep 9s ease-in-out infinite; }
+      @keyframes sweep {
+        0%   { transform: translateX(-460px); opacity: 0; }
+        12%  { opacity: .9; }
+        88%  { opacity: .9; }
+        100% { transform: translateX(1320px); opacity: 0; }
+      }
+
+      .chip-rect { animation: breathe 4.5s ease-in-out infinite; }
+      @keyframes breathe { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+
+      .title { font-size: 52px; font-weight: 800; letter-spacing: 1px; fill: var(--ink); }
+      .title-accent { fill: url(#brand); }
+      .tag { font-size: 21px; font-weight: 500; fill: var(--sub); letter-spacing: .4px; }
+      .chip { fill: var(--chip); stroke: var(--panel-border); }
+      .chip-text { font-size: 16.5px; font-weight: 600; fill: var(--accent); letter-spacing: 2.2px; }
+
+      .float { animation: float 6.5s ease-in-out infinite; }
+      .float.b { animation-duration: 8s; animation-delay: -2s; }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .trace-live, .led, .sweep, .chip-rect, .float { animation: none; }
+        .trace-live { opacity: .85; stroke-dasharray: none; }
+        .sweep { opacity: 0; }
+      }
+    ]]></style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="var(--bg1)"/>
+      <stop offset="100%" stop-color="var(--bg2)"/>
+    </linearGradient>
+
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="var(--accent)"/>
+      <stop offset="55%" stop-color="var(--accent2)"/>
+      <stop offset="100%" stop-color="var(--accent3)"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.35 0; 0.35 0; -0.35 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="var(--accent)" stop-opacity="0"/>
+      <stop offset="45%" stop-color="var(--accent2)" stop-opacity="1"/>
+      <stop offset="100%" stop-color="var(--accent3)" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="var(--accent2)" stop-opacity="0"/>
+      <stop offset="50%" stop-color="var(--accent2)" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="var(--accent2)" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="var(--grid)" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/><feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+  <circle cx="120" cy="40" r="90" fill="var(--accent)" opacity=".10" filter="url(#soft)"/>
+  <circle cx="1080" cy="270" r="110" fill="var(--accent3)" opacity=".12" filter="url(#soft)"/>
+
+  <!-- circuit traces (top) -->
+  <path class="trace" d="M40 46H190l26 26H360l22-22h150"/>
+  <path class="trace-live" d="M40 46H190l26 26H360l22-22h150"/>
+  <path class="trace" d="M1160 74H1010l-26 26H860l-22-22H690"/>
+  <path class="trace-live slow" d="M1160 74H1010l-26 26H860l-22-22H690"/>
+  <path class="trace" d="M470 28H640l24 24h180"/>
+  <path class="trace-live fast" d="M470 28H640l24 24h180"/>
+  <circle class="via" cx="40" cy="46" r="4.5"/>
+  <circle class="via" cx="1160" cy="74" r="4.5"/>
+  <circle class="via" cx="690" cy="78" r="4.5"/>
+  <circle class="via" cx="844" cy="52" r="4.5"/>
+  <circle class="via" cx="530" cy="28" r="4.5"/>
+
+  <!-- circuit traces (bottom) -->
+  <path class="trace" d="M40 244H200l24-24h190l24 24h120"/>
+  <path class="trace-live slow" d="M40 244H200l24-24h190l24 24h120"/>
+  <path class="trace" d="M1160 226H1000l-24 24H790l-24-24H660"/>
+  <path class="trace-live" d="M1160 226H1000l-24 24H790l-24-24H660"/>
+  <circle class="via" cx="40" cy="244" r="4.5"/>
+  <circle class="via" cx="1160" cy="226" r="4.5"/>
+  <circle class="via" cx="660" cy="226" r="4.5"/>
+
+  <!-- microcontroller chip, right side -->
+  <g class="float" transform="translate(1006 120)">
+    <rect x="0" y="0" width="126" height="86" rx="10" fill="var(--panel)" stroke="var(--panel-border)"/>
+    <rect class="chip-rect" x="16" y="16" width="94" height="54" rx="6" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <text x="63" y="48" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)" letter-spacing="1.5">EE · 28</text>
+    <g stroke="var(--trace)" stroke-width="2">
+      <path d="M18 0V-13M42 0V-13M66 0V-13M90 0V-13M18 86v13M42 86v13M66 86v13M90 86v13"/>
+      <path d="M0 22h-14M0 44h-14M0 66h-14M126 22h14M126 44h14M126 66h14"/>
+    </g>
+    <circle class="led d1" cx="112" cy="12" r="4" fill="#22c55e"/>
+    <circle class="led d3" cx="12" cy="74" r="4" fill="var(--accent2)"/>
+  </g>
+
+  <!-- robot head, left side -->
+  <g class="float b" transform="translate(58 128)">
+    <path d="M44 0v-16" stroke="var(--trace)" stroke-width="2.5"/>
+    <circle class="led d2" cx="44" cy="-22" r="6" fill="var(--accent3)"/>
+    <rect x="0" y="0" width="88" height="70" rx="18" fill="var(--panel)" stroke="var(--panel-border)"/>
+    <circle cx="28" cy="32" r="8" fill="var(--accent)"><animate attributeName="opacity" values="1;0.25;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="32" r="8" fill="var(--accent)"><animate attributeName="opacity" values="1;0.25;1" dur="3.4s" begin=".5s" repeatCount="indefinite"/></circle>
+    <path d="M28 54h32" stroke="var(--sub)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- center title panel -->
+  <rect class="sweep" x="-260" y="0" width="240" height="300" fill="url(#sweepGrad)"/>
+
+  <text class="tag" x="600" y="80" text-anchor="middle" letter-spacing="4.2" font-size="15" font-weight="700" fill="var(--accent)">ELECTRICAL ENGINEERING · EMBEDDED · ROBOTICS · AUTOMATION</text>
+  <text class="title" x="600" y="152" text-anchor="middle">&lt;<tspan class="title-accent">Jayant Katariya</tspan>&gt;</text>
+  <text class="tag" x="600" y="182" text-anchor="middle" font-size="17" font-weight="600" fill="var(--accent3)" letter-spacing=".6">जयंत कटारिया</text>
+  <text class="tag" x="600" y="208" text-anchor="middle">Bridging hardware circuits with intelligent software control systems.</text>
+
+  <g>
+    <rect class="chip" x="418" y="226" width="170" height="32" rx="16"/>
+    <text class="chip-text" x="503" y="247" text-anchor="middle">AUTOCAD ELECTRICAL</text>
+    <rect class="chip" x="598" y="226" width="86" height="32" rx="16"/>
+    <text class="chip-text" x="641" y="247" text-anchor="middle">LTSPICE</text>
+    <rect class="chip" x="694" y="226" width="88" height="32" rx="16"/>
+    <text class="chip-text" x="738" y="247" text-anchor="middle">SIMULINK</text>
+  </g>
+</svg>

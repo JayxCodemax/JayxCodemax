@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 46" width="240" height="46" role="img" aria-label="Simulink / MATLAB — just started">
+  <defs>
+    <style><![CDATA[
+      :root { --panel: rgba(255,255,255,.70); --border: #dc262633; --ink: #0f172a; --sub: #64748b; --track: #e6ebf5; }
+      @media (prefers-color-scheme: dark) {
+        :root { --panel: rgba(13,20,38,.66); --border: #dc262655; --ink: #e8eefc; --sub: #93a6c4; --track: #18233c; }
+      }
+      text { font-family: 'Segoe UI', ui-sans-serif, system-ui, -apple-system, Roboto, sans-serif; }
+      .name  { font-size: 13px; font-weight: 600; fill: var(--ink); }
+      .state { font-size: 10px; font-weight: 800; fill: #dc2626; letter-spacing: 1px; text-transform: uppercase; }
+      .panel { fill: var(--panel); stroke: var(--border); }
+      .track { fill: var(--track); }
+      .tick  { stroke: var(--panel); stroke-width: 2; }
+      .fill  { transform-box: fill-box; transform-origin: left center;
+                animation: grow 1.6s cubic-bezier(.22,1,.36,1) .2s both; }
+      @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      @media (prefers-reduced-motion: reduce) { .fill { animation: none; } }
+    ]]></style>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#dc2626"/><stop offset="100%" stop-color="#f97316"/></linearGradient>
+  </defs>
+  <rect class="panel" x="0.5" y="0.5" width="239" height="45" rx="12"/>
+  <circle cx="16" cy="28" r="4.5" fill="#dc2626" opacity=".85"/>
+  <text class="name" x="24" y="20">Simulink / MATLAB</text>
+  <text class="state" x="228" y="20" text-anchor="end">just started</text>
+  <rect class="track" x="24" y="30" width="204" height="10" rx="5.0"/>
+  <g class="tick" opacity=".9"><path d="M79 28v14" stroke="var(--panel)"/><path d="M116 28v14" stroke="var(--panel)"/><path d="M154 28v14" stroke="var(--panel)"/><path d="M191 28v14" stroke="var(--panel)"/></g>
+  <g class="fill"><rect x="24" y="30" width="34" height="10" rx="5.0" fill="url(#g)"/></g>
+</svg>
