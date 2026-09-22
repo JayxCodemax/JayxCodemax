@@ -273,11 +273,11 @@ Re-drawing real motor-control circuits until symbols and numbering stop slowing 
 
 ---
 
-## 🌱 Skills I'm Adding Next *(handy, and genuinely beginner-friendly)*
+## 🌱 Skills I'm Adding Next 
 
 > Ordered by *effort-to-reward ratio*. Each one is a weekend, not a semester.
 
-| Skill | Why it's an easy win | First project to try |
+| Skill | Why it's an easy win | First project |
 |---|---|---|
 | **Tinkercad Circuits** | Zero install, drag-and-drop Arduino sim | Blink + LDR-triggered buzzer, in the browser |
 | **Wokwi / Proteus sim** | Simulate before you buy hardware | Full line-follower with no soldering |
@@ -464,6 +464,6 @@ Un-comment the line below **after** enabling `.github/workflows/snake.yml` (see 
 ---
 
 <p align="center">
-  <sub>⚡ “First we make the circuit work. Then we make it <b>think</b>.” · Jayant Katariya · Arya College of Engineering & Research Centre, Jaipur, RTU Kota<br/>
+  <sub>⚡ “First we make the circuit work. Then we make it <b>think</b>.” · Jayant Katariya · Arya College of Engineering, Jaipur, RTU Kota<br/>
   <a href="#-featured-projects">↑ jump to my pipeline</a> · <a href="SETUP.md">how this page was built</a> · last commit <img alt="last commit" src="https://img.shields.io/github/last-commit/JayxCodemax/JayxCodemax?style=flat-square&label=%20"/></sub>
 </p>
