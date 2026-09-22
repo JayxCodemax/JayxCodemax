@@ -149,13 +149,13 @@ void loop() {
 </p>
 </details>
 
-<sub>🌱 *Anything marked "learning", "basics" or "wishlist" above is exactly that — no inflated expertise here. The bars below show where I actually stand.*</sub>
+
 
 ---
 
 ## 📈 Where My Skills Actually Are
 
-Bars are **self-assessed learning stages**, not industry levels — and they re-animate on every visit.
+Bars are **self-assessed learning stages**, not industry levels 
 
 <p align="center">
   <img src="assets/skill-bars.svg" alt="Animated skill bars by category, labelled with learning stages" width="100%"/>
