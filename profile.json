@@ -1,0 +1,19 @@
+{
+  "_comment": "The single source of truth for your profile. Edit here, then run: python3 tools/personalize.py",
+
+  "FULL_NAME": "Jayant Katariya",
+  "USERNAME": "JayxCodemax",
+  "EMAIL": "katariyajayant95@gmail.com",
+  "COLLEGE": "Arya College of Engineering & Research Centre, Jaipur",
+  "UNIVERSITY": "RTU Kota",
+  "LOCATION": "Jaipur, Rajasthan 🇮🇳",
+  "LOCATION_URL": "Jaipur%2C%20Rajasthan%20🇮🇳",
+  "BANNER_KICKER": "ELECTRICAL ENGINEERING · EMBEDDED · ROBOTICS · AUTOMATION",
+
+  "JOURNEY_START": "2025-07-01",
+  "_note_journey": "2025-07-01 = RTU B.Tech session start. Move it earlier if you were tinkering before college — the counter and the degree-clock % both read these two dates.",
+  "GRADUATION": "2029-06-30",
+  "_note_graduation": "4-year B.Tech batch 2025-29. Set to your real convocation month.",
+
+  "_note_handles": "USERNAME drives 22 links + both workflows. The profile repo MUST be named JayxCodemax/JayxCodemax for the README to render as your profile."
+}

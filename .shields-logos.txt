@@ -1,0 +1,57 @@
+# Verified against simple-icons@latest (checked 2026-09-22 by fetching every
+# badge from img.shields.io and confirming an icon is actually embedded).
+# Add a slug here only after you've confirmed:
+#   curl -s "https://img.shields.io/badge/Test-blue?logo=SLUG" | grep -c '<image\|data:image'
+# Known-missing as of today: linkedin, matlab, mathworks, openai, visualstudiocode,
+# fusion360, solidworks, analogdevices, vscode → use plain badges for those.
+arduino
+autocad
+autodesk
+bootstrap
+c
+codechef
+cplusplus
+css
+easyeda
+espressif
+figma
+flask
+geeksforgeeks
+git
+github
+githubactions
+githubcopilot
+gmail
+grafana
+hackaday
+hackerrank
+homeassistant
+html5
+inkscape
+javascript
+kicad
+latex
+leetcode
+linux
+markdown
+micropython
+mqtt
+nodedotjs
+nodered
+npm
+obsidian
+octoprint
+opencv
+overleaf
+platformio
+proteus
+python
+raspberrypi
+react
+stackshare
+tailwindcss
+tinkercad
+vite
+wakatime
+youtube
+ltspice
