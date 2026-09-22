@@ -16,7 +16,7 @@
 <h1 align="center">👋 Hi, I'm Jayant Katariya</h1>
 
 <p align="center">
-  ⚡ <b>Electrical Engineering · B.Tech 2025-29</b> · Arya College of Engineering & Research Centre, Jaipur <sub>(RTU Kota)</sub><br/>
+  ⚡ <b>Electrical Engineering · B.Tech 2025-29</b> · Arya College of Engineering , Jaipur <sub>(RTU Kota)</sub><br/>
   Learning to bridge <b>hardware circuits</b> and <b>intelligent software control</b> — one breadboard, one commit at a time.<br/>
   <b>Open for working on projects</b> — collaborators welcome, I document as I build.
 </p>
@@ -177,7 +177,7 @@ Bars are **self-assessed learning stages**, not industry levels — and they re-
   <a href="tools/gen_mini_bars.py"><img alt="edit these bars" src="https://img.shields.io/badge/✏️_change_a_bar-tools/gen_mini_bars.py-64748B?style=for-the-badge"/></a>
 </p>
 
-> **The plan is simple:** every bar moves up only when I can show a repo that proves it.
+> **The plan is simple:** 
 
 ---
 
